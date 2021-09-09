@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCell" customModule="Week5Exc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="274" height="269"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="274" height="269"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y9t-Uy-3VI">
+                        <rect key="frame" x="0.0" y="0.0" width="274" height="134.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZL-fj-GJ8">
+                        <rect key="frame" x="8" y="142.5" width="258" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kb7-nt-XLf">
+                        <rect key="frame" x="8" y="171" width="258" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKg-ER-qqQ">
+                        <rect key="frame" x="8" y="198.5" width="210" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGreenColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="188-qf-Mmw">
+                        <rect key="frame" x="226" y="221" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="0eN-7g-Yik"/>
+                        </constraints>
+                        <state key="normal" image="ico_add_watch"/>
+                        <connections>
+                            <action selector="toggleWatchList:" destination="gTV-IL-0wX" eventType="touchUpInside" id="wJJ-04-5M0"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7H-MV-s9X">
+                        <rect key="frame" x="226" y="16" width="32" height="32"/>
+                        <color key="backgroundColor" white="1" alpha="0.75096318493150682" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="ico_fav_unselected"/>
+                        <connections>
+                            <action selector="toggleFavourite:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Cgl-DN-NBS"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Kb7-nt-XLf" secondAttribute="trailing" constant="8" id="6ah-JT-56h"/>
+                <constraint firstItem="Kb7-nt-XLf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="80V-D8-rnI"/>
+                <constraint firstItem="SZL-fj-GJ8" firstAttribute="top" secondItem="Y9t-Uy-3VI" secondAttribute="bottom" constant="8" id="99u-P0-p7P"/>
+                <constraint firstItem="NKg-ER-qqQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Amq-sW-khk"/>
+                <constraint firstAttribute="trailing" secondItem="188-qf-Mmw" secondAttribute="trailing" constant="16" id="EWL-B6-oRm"/>
+                <constraint firstAttribute="bottom" secondItem="188-qf-Mmw" secondAttribute="bottom" constant="16" id="Iy2-2o-uLf"/>
+                <constraint firstItem="SZL-fj-GJ8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="MyO-Sj-bo3"/>
+                <constraint firstItem="Y9t-Uy-3VI" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.5" id="N3O-1X-Zk2"/>
+                <constraint firstItem="J7H-MV-s9X" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="YWf-i9-awF"/>
+                <constraint firstItem="Y9t-Uy-3VI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="alD-Mw-5HL"/>
+                <constraint firstAttribute="trailing" secondItem="Y9t-Uy-3VI" secondAttribute="trailing" id="dCh-RA-zR9"/>
+                <constraint firstAttribute="trailing" secondItem="SZL-fj-GJ8" secondAttribute="trailing" constant="8" id="dUl-hU-Boe"/>
+                <constraint firstItem="Y9t-Uy-3VI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="iDI-8s-xPJ"/>
+                <constraint firstItem="Kb7-nt-XLf" firstAttribute="top" secondItem="SZL-fj-GJ8" secondAttribute="bottom" constant="8" id="kQo-TY-cHa"/>
+                <constraint firstAttribute="trailing" secondItem="J7H-MV-s9X" secondAttribute="trailing" constant="16" id="mgh-tZ-mt9"/>
+                <constraint firstItem="188-qf-Mmw" firstAttribute="leading" secondItem="NKg-ER-qqQ" secondAttribute="trailing" constant="8" id="nmc-ev-rFm"/>
+                <constraint firstItem="NKg-ER-qqQ" firstAttribute="top" secondItem="Kb7-nt-XLf" secondAttribute="bottom" constant="8" id="sjW-ac-jA1"/>
+            </constraints>
+            <size key="customSize" width="274" height="269"/>
+            <connections>
+                <outlet property="addWatchListButton" destination="188-qf-Mmw" id="tRA-Ue-Wca"/>
+                <outlet property="backdropImageView" destination="Y9t-Uy-3VI" id="3U6-PP-9ke"/>
+                <outlet property="favouriteButton" destination="J7H-MV-s9X" id="Lxb-nC-dK7"/>
+                <outlet property="popularityLabel" destination="NKg-ER-qqQ" id="KtZ-nD-cdW"/>
+                <outlet property="releaseDateLabel" destination="Kb7-nt-XLf" id="g5c-uD-HQm"/>
+                <outlet property="titleLabel" destination="SZL-fj-GJ8" id="ZxP-sY-EVF"/>
+            </connections>
+            <point key="canvasLocation" x="-213.04347826086959" y="-19.084821428571427"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_add_watch" width="32" height="32"/>
+        <image name="ico_fav_unselected" width="32" height="32"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
